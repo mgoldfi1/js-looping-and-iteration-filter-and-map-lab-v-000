@@ -5,5 +5,6 @@ function driversWithRevenueOver(drivers,string) {
 }
 
 function driverNamesWithRevenueOver(drivers,string) {
+  debugger;
   return driversWithRevenueOver(drivers,string).map(function(x) {x.name})
 }
