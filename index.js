@@ -6,5 +6,6 @@ function driversWithRevenueOver(drivers,string) {
 
 function driverNamesWithRevenueOver(drivers,string) {
   debugger;
-  return driversWithRevenueOver(drivers,string).map(function(x) {x.name})
+  const array = driversWithRevenueOver(drivers,string)
+  return array.map(function(y) {y.name})
 }
