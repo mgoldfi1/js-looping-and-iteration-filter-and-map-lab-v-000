@@ -7,7 +7,9 @@ function driversWithRevenueOver(drivers,string) {
 function driverNamesWithRevenueOver(drivers,string,cb) {
 
   return driversWithRevenueOver(drivers,string).map(function (y) {return y.name})
-    
+
   }
 
-
+function exactMatch(drivers,object) {
+  return drivers.filter(function(x) {return x[Object.keys(object)[0]] === object[Object.keys(object)[0]]})
+}
